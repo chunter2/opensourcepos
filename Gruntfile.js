@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			target: {
 				files: {
-					'public/dist/<%= pkg.name %>.min.css': ['tmp/opensourcepos_bower.css', 'public/css/*.css', '!public/css/login.css', '!public/css/invoice_email.css', '!public/css/barcode_font.css']
+					'public/dist/<%= pkg.name %>.min.css': ['tmp/opensourcepos_bower.css', 'public/css/*.css', '!public/css/login.css', '!public/css/invoice_email.css', '!public/css/barcode_font.css', '!public/css/darkly.css']
 				}
 			}
 		},
@@ -106,7 +106,7 @@ module.exports = function(grunt) {
 					closeTag: '<!-- end css template tags -->',
 					ignorePath: '../../../public/'
 				},
-				src: ['public/css/*.css', '!public/css/login.css', '!public/css/invoice_email.css', '!public/css/barcode_font.css'],
+				src: ['public/css/*.css', '!public/css/login.css', '!public/css/invoice_email.css', '!public/css/barcode_font.css', '!public/css/darkly.css'],
 				dest: 'application/views/partial/header.php',
 			},
 			mincss_header: {
